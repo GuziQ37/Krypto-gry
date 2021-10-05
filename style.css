@@ -12,8 +12,9 @@ body{
 .offset:before {
   display: block;  
   content: "";
-  height: 4rem;
-  margin-top: -4rem;
+  height:inherit;
+  /* align-content: center; */
+  /* margin-top: -4rem; */
 }
 
 
@@ -67,13 +68,14 @@ iframe{
 .navbar{
   text-transform: uppercase;
   font-weight: 700;
-  font-size: .9rem;
+  font-size: .8rem;
   letter-spacing: .1rem;
-  background-color: rgba(0, 0, 0, 0.6) !important;
+  background-color: rgba(0, 0, 0, 0.8) !important;
 }
 
 .navbar-brand img {
-  height: 4rem;
+  height: 6rem;
+  width: 14rem;
 }
 
 
@@ -88,14 +90,14 @@ iframe{
 
 .navbar-dark .navbar-nav .nav-link.active,
 .navbar-dark .navbar-nav .nav-link:hover{
-  color:#e360e0;
+  color:#e96fff;
 
 }
 
 /* Landing Page */
 
 .home-inner {
-  background-image: url(img/blockchain.png)
+  background-image: url(img/PP-logo.jpg)
 }
 
 
@@ -114,18 +116,22 @@ iframe{
   font-size: 3.8rem;
   font-weight: 700;
   letter-spacing: .3rem;
-  text-shadow: .5rem .5rem .8rem rgb(255, 255, 255);
-  padding-bottom: 1rem;
+  /* text-shadow: .5rem .5rem .8rem rgb(255, 255, 255); */
+  padding-bottom: 0.5rem;
 }
 
 .caption h3{
-  font-size: 2rem;
-  text-shadow: .1rem .1rem .5rem rgb(255, 255, 255);
-  padding-bottom: 1.6rem;
+  font-size: 2.6rem;
+  /* text-shadow: .1rem .1rem .5rem rgb(255, 255, 255); */
+  padding-bottom: 0.5rem;
+  color: #000000;
 }
-
+.caption-text{
+  margin-top: 320px;
+  margin-bottom: 110px;
+}
 .btn-first{
-  background-color: #e360e0;
+  background-color: #e96fff;
   color: white;
   border: none;
   padding: 15px 32px;
@@ -149,7 +155,11 @@ iframe{
   color: #ffffff;
 }
 
-/* CV section */
+/* projects section */
+
+.projects{
+  color: #000000;
+}
 
 .narrow{
   width: 75%;
@@ -170,11 +180,11 @@ padding: .6rem 1.2rem;
 margin: 1rem;
 color: rgb(255, 255, 255);
 background-color: #302c30;
-border-color: #e360e0;
+border-color: #e96fff;
 }
 .btn-secondary:hover{
-  background-color: #e360e0;
-  border-color: #e360e0;
+  background-color: #e96fff;
+  border-color: #e96fff;
   }
 
   /* Features Section */
@@ -183,35 +193,47 @@ border-color: #e360e0;
     margin-bottom: 0;
     padding: 2rem 0 3.5rem;
     border-radius:0;
+    background-color: transparent !important; 
+ 
     
   }
 
-  h3.heading{
+#features{
+  background-image: url(img/PP-sygnet_z-prawej-tlo-rozowe.jpg);
+  background-size: 100% auto;
+  background-position: 0 6%;
+  background-repeat: repeat;
+}
+
+  h4.heading{
 font-size: 1.9rem;
 font-weight: 700;
 text-transform: uppercase;
 margin-bottom: 1.9rem;
+color: #e96fff;
   }
 
   .heading-underline{
     width:3rem;
     height: .2rem;
-    background-color: #e360e0;
+    background-color: #e96fff;
     margin: 0 auto 2rem;
   }
 
   .feature svg.svg-inline--fa{
-    color:#e360e0;
+    color:#e96fff;
+    text-align: center;
+    align-content: center;
   }
 
   .feature h3{
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     text-transform: uppercase;
     padding-bottom:.4rem;
   }
 
   .feature p{
-    font-size: 1.1rem;
+    font-size: 0.9rem;
   }
 
 
@@ -239,21 +261,30 @@ margin-top: 1.5rem;
 
 /* about Section */
 
+.about-us{
+align-content: center ;
+}
+
 .about img{
-  width: 100%;
+  width: 40%;
+  display: block;
+  margin-bottom: 10px;
+  margin-top: 10px;
   border-radius: 50%;
 }
 
 blockquote svg.svg-inline--fa{
-  color:#e360e0;
+  color:#e96fff;
   margin: 1rem;
 }
 
 .about-hr {
-border-top: .2rem solid #e360e0;
+border-top: .2rem solid #e96fff;
 }
 
 /* Contact Section */
+
+
 
 footer{
   background-color: #40474e;
@@ -262,10 +293,20 @@ footer{
   margin-top:0rem;
 }
 
-footer img{
-height: 3rem;
-margin: 1.5rem 0;
-}
+/* footer img{
+height:7rem;
+margin: 7rem;
+} */
+/* 
+footer.footer-logo{
+  width: 200px!important;
+  height: 200px!important;
+  margin: 0 0 0 0;
+} */
+/* 
+.footer-logo{
+
+} */
 
 footer a {
   color: white;
@@ -278,7 +319,7 @@ footer svg.svg-inline--fa{
 }
 
 footer svg.svg-inline--fa:hover{
-  color: #e360e0!important;
+  color: #e96fff!important;
   
 }
 
@@ -291,14 +332,17 @@ hr.socket{
 /* Newsletter form */
 
 /* Style the form element with a border around it */
-form {
-  border: 4px solid #f1f1f1;
+.form {
+  /* border: 4px solid #f1f1f1; */
+}
+
+::placeholder{
+  color: #e96fff;
 }
 
 /* Add some padding and a grey background color to containers */
-/* .container {
-  padding: 20px;
-  background-color: #f1f1f1;
+/* .offset {
+align-content: center;
 } */
 
 /* Style the input elements and the submit button */
@@ -309,6 +353,7 @@ input[type=text], input[type=submit] {
   display: inline-block;
   border: 1px solid #ccc;
   box-sizing: border-box;
+  background: transparent;
 }
 
 /* Add margins to the checkbox
@@ -318,9 +363,16 @@ input[type=checkbox] {
 
 /* Style the submit button */
 input[type=submit] {
-  background-color: #e360e0;
+  background-color: #e96fff;
   color: white;
   border: none;
+  width: 15rem;
+  /* margin-left: auto;
+  margin-right: auto; */
+}
+
+footer{
+  text-align: center;
 }
 
 input[type=submit]:hover {
@@ -338,6 +390,12 @@ input[type=submit]:hover {
     }
     
     .caption h3{
+      font-size: 1.2rem;
+      padding-bottom: 1.2rem;
+    }
+
+
+    .caption h4{
       font-size: 1.2rem;
       padding-bottom: 1.2rem;
     }
